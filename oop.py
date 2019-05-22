@@ -1,11 +1,13 @@
 # creates a class
 class Dog:
 
+  # ALL dogs are good
+  good = True
+
   # runs when each "Dog" (member of Class) is created
   def __init__ (self, name, age):
     self.name = name
     self.age = age
-    self.good = True
     self.fed = False
   
   # function exclusive to Dog
@@ -38,3 +40,4 @@ doggo.bark()
 print(isDogFed(doggo))
 feed(doggo)
 print(isDogFed(doggo))
+print(doggo.good)
